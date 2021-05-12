@@ -4,9 +4,9 @@
 ### [EN]
 This project was designed just to be part of my portfolio as a demostration of experience and learning.
 
-<a href="https://galaxy.store/98LE"><img src="https://img.samsungapps.com/seller/images/badges/galaxyStore/png_big/GalaxyStore_Portuguese(Brazil).png?3" alt="Available on Samsung Galaxy Store" width="25%"></a>
+<a href="https://galaxy.store/98LE"><img src="https://img.samsungapps.com/seller/images/badges/galaxyStore/png_big/GalaxyStore_English.png?3" alt="Available on Samsung Galaxy Store" width="25%"></a>
 
-**Available only on Galaxy Store. Available only on Brazil**
+**Available only on Galaxy Store. Available only on Brazil.**
 
 ### What is this project?
 
@@ -44,7 +44,7 @@ The application offers, in addition of the letters, the possibility of translati
 
 Este projeto foi idealizado apenas para fazer parte do meu portfólio como demonstração de experiência e aprendizado.
 
-<a href="https://galaxy.store/98LE"><img src="https://img.samsungapps.com/seller/images/badges/galaxyStore/png_big/GalaxyStore_Portuguese(Brazil).png?3" alt="Available on Samsung Galaxy Store" width="25%"></a>
+<a href="https://galaxy.store/98LE"><img src="https://img.samsungapps.com/seller/images/badges/galaxyStore/png_big/GalaxyStore_Portuguese(Brazil).png?3" alt="Disponível na Samsung Galaxy Store" width="25%"></a>
 
 **Disponível apenas na Galaxy Store. Disponível apenas no Brasil.**
 
