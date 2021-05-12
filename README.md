@@ -1,4 +1,4 @@
-# ![](https://i.imgur.com/2mPQBdL.png?raw=true "Lyrics Edge")
+# ![](https://i.imgur.com/p5TWYPf.png?raw=true "Lyrics Edge")
 
 
 ### [EN]
