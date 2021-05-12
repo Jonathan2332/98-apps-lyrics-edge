@@ -1,0 +1,99 @@
+plugins {
+    id 'com.android.application'
+    id 'kotlin-android'
+    id 'com.google.android.gms.oss-licenses-plugin'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "a98apps.lyricsedge"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    def keystorePropertiesFile = rootProject.file("keystore.properties")
+    def keystoreProperties = new Properties()
+    keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
+    signingConfigs {
+        config {
+            keyAlias keystoreProperties['keyAlias']
+            keyPassword keystoreProperties['keyPassword']
+            storeFile file(keystoreProperties['storeFile'])
+            storePassword keystoreProperties['storePassword']
+        }
+    }
+
+    def apiFile = rootProject.file("api.properties")
+    def apiProperties = new Properties()
+    apiProperties.load(new FileInputStream(apiFile))
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.config
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+
+            buildConfigField 'String', 'API_BASE_URL', "${apiProperties['baseUrl']}"
+            buildConfigField 'String', 'API_ART_PARAMTER', "${apiProperties['artistParam']}"
+            buildConfigField 'String', 'API_MUS_PARAMTER', "${apiProperties['musicParam']}"
+            buildConfigField 'String', 'API_SERIAL_PARAMTER', "${apiProperties['serialParam']}"
+            buildConfigField 'String', 'API_UDIG_PARAMTER', "${apiProperties['udigParam']}"
+            buildConfigField 'String', 'API_KEY_PARAMTER', "${apiProperties['apiKeyParam']}"
+            buildConfigField 'String', 'API_KEY', "${apiProperties['apiKey']}"
+        }
+        debug {
+
+            buildConfigField 'String', 'API_BASE_URL', "${apiProperties['baseUrl']}"
+            buildConfigField 'String', 'API_ART_PARAMTER', "${apiProperties['artistParam']}"
+            buildConfigField 'String', 'API_MUS_PARAMTER', "${apiProperties['musicParam']}"
+            buildConfigField 'String', 'API_SERIAL_PARAMTER', "${apiProperties['serialParam']}"
+            buildConfigField 'String', 'API_UDIG_PARAMTER', "${apiProperties['udigParam']}"
+            buildConfigField 'String', 'API_KEY_PARAMTER', "${apiProperties['apiKeyParam']}"
+            buildConfigField 'String', 'API_KEY', "${apiProperties['apiKey']}"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation files('libs/sdk-v1.0.0.jar')
+    implementation files('libs/slook_v1.4.0.jar')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'androidx.core:core-ktx:1.3.2'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.preference:preference-ktx:1.1.1'
+    implementation 'com.google.android.material:material:1.3.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+
+    implementation 'com.google.android.gms:play-services-oss-licenses:17.0.0'
+
+    implementation 'com.jaredrummler:colorpicker:1.1.0'
+    implementation 'androidx.preference:preference-ktx:1.1.1'
+
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.github.florent37:expansionpanel:1.2.4'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0'
+
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+}

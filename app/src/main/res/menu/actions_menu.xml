@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/view"
+        android:icon="@drawable/ic_panel_white"
+        android:title="@string/text_send_to_the_panel" />
+
+    <item
+        android:id="@+id/select_all"
+        android:icon="@drawable/ic_baseline_select_all_24"
+        android:title="@android:string/selectAll" />
+
+    <item
+        android:id="@+id/delete"
+        android:icon="@drawable/ic_baseline_delete_24"
+        android:title="@string/text_delete" />
+
+    <item
+        android:id="@+id/share"
+        android:icon="@drawable/ic_baseline_share_24"
+        android:title="@string/text_share" />
+
+</menu>

@@ -1,0 +1,140 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/title_category_style">
+
+        <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+            app:cpv_colorShape="circle"
+            app:cpv_showAlphaSlider="true"
+            app:defaultValue="0xFF448AFF"
+            app:icon="@drawable/ic_title"
+            app:key="key_title_color"
+            app:summary="@string/summary_title_color"
+            app:title="@string/title_color" />
+
+        <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+            app:cpv_colorShape="circle"
+            app:cpv_showAlphaSlider="true"
+            app:defaultValue="0xFFD1D1D1"
+            app:icon="@drawable/ic_border_color"
+            app:key="key_divider_color"
+            app:summary="@string/summary_divider_color"
+            app:title="@string/divider_color" />
+
+        <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+            app:cpv_colorShape="circle"
+            app:cpv_showAlphaSlider="true"
+            app:defaultValue="0xFF000000"
+            app:icon="@drawable/ic_text_fields"
+            app:key="key_text_color"
+            app:summary="@string/summary_text_color"
+            app:title="@string/title_text_window" />
+
+        <com.jaredrummler.android.colorpicker.ColorPreferenceCompat
+            app:cpv_colorShape="circle"
+            app:cpv_showAlphaSlider="true"
+            app:defaultValue="0xFFFFFFFF"
+            app:icon="@drawable/ic_panel"
+            app:key="key_panel_color"
+            app:summary="@string/summary_panel_color"
+            app:title="@string/title_panel_color" />
+
+        <SeekBarPreference
+            android:max="20"
+            app:defaultValue="14"
+            app:icon="@drawable/ic_baseline_format_size_24"
+            app:key="key_text_size"
+            app:min="8"
+            app:showSeekBarValue="true"
+            app:title="@string/title_text_size" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/title_category_lyrics">
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:icon="@drawable/ic_approximate"
+            app:key="key_approximate_result"
+            app:summary="@string/summary_approximate_result"
+            app:title="@string/title_approximate_result" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:icon="@drawable/ic_baseline_access_time_24"
+            app:key="key_long_track"
+            app:summary="@string/summary_long_track"
+            app:title="@string/title_long_track" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:icon="@drawable/ic_baseline_g_translate_24"
+            app:key="key_translation"
+            app:summary="@string/summary_translation"
+            app:title="@string/title_translation" />
+
+        <Preference
+            app:fragment="a98apps.lyricsedge.view.fragments.LyricCacheFragment"
+            app:icon="@drawable/ic_lyrics"
+            app:summary="@string/summary_cached_lyrics"
+            app:title="@string/title_cached_lyrics"
+            app:widgetLayout="@layout/icon_fragment_layout" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:iconSpaceReserved="false"
+        app:title="@string/title_category_app">
+
+        <Preference
+            app:icon="@drawable/ic_baseline_cached_24"
+            app:key="key_clear_lyrics"
+            app:summary="@string/summary_clear_lyrics"
+            app:title="@string/title_clear_lyrics" />
+
+        <ListPreference
+            app:defaultValue="0"
+            app:dialogTitle="@string/title_app_theme"
+            app:entries="@array/app_theme_entries"
+            app:entryValues="@array/app_theme_values"
+            app:icon="@drawable/ic_theme"
+            app:key="key_app_theme"
+            app:summary="@string/summary_theme_app"
+            app:title="@string/title_app_theme" />
+
+        <Preference
+            app:icon="@drawable/ic_star"
+            app:title="@string/text_rate_app">
+
+            <intent
+                android:action="android.intent.action.VIEW"
+                android:data="samsungapps://AppRating/a98apps.lyricsedge" />
+        </Preference>
+
+        <Preference
+            app:icon="@drawable/ic_baseline_coffee_24"
+            app:title="@string/title_donate"
+            app:key="key_coffee"/>
+
+        <Preference
+            app:key="key_open_source"
+            app:selectable="true"
+            app:summary="@string/summary_open_source_licenses">
+
+            <intent
+                android:targetClass="com.google.android.gms.oss.licenses.OssLicensesMenuActivity"
+                android:targetPackage="a98apps.lyricsedge" />
+        </Preference>
+
+        <Preference
+            app:key="key_app_version"
+            app:selectable="false"
+            app:summary="@string/text_version" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cocktail-provider
+    previewImage="@drawable/preview_edge"
+    label="@string/app_name"
+    description="Music lyrics on the edge panel"
+    cocktailWidth="550"
+    category="normal"
+    launchOnClick="a98apps.lyricsedge.view.SettingsActivity"
+    permitVisibilityChanged="true">
+</cocktail-provider>

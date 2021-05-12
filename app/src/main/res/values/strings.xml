@@ -1,0 +1,121 @@
+<resources>
+    <string name="app_name">Lyrics Edge</string>
+
+    <!--PANEL-->
+
+    <string name="text_setup_panel">To continue, you need to make some settings, click the button below to continue</string>
+    <string name="text_captcha_security">For security reasons, it will be necessary to do a Captcha check, click the button below to continue</string>
+    <string name="text_lyric_not_found_cache">Lyric not found in cache</string>
+    <string name="text_panel_default">For now, there is nothing to show ♪♫♪</string>
+    <string name="text_approximate">Approximate</string>
+    <string name="text_exact">Exact</string>
+    <string name="text_approximate_lowercase_parentheses">(approximate)</string>
+    <string name="text_copied_to_clipboard">Copied to clipboard</string>
+    <string name="text_original">Original</string>
+
+    <!--    SETUP ACTIVITY-->
+    <string name="title_activity_setup">Panel configuration</string>
+
+    <string name="text_about_setup">Hello, below you will find useful information about the operation of the application and at the end the permission to access the notification that is necessary to finalize the panel configuration.</string>
+
+    <string name="text_info_notification_access">To find out which song is being played on your device, it is necessary to access the information by notifying the music player (such as title, name and duration of the song). Don\'t worry, no data is collected.</string>
+    <string name="text_info_players_support">Not all music players can be supported, as music players must transmit valid information about the music being played.</string>
+    <string name="text_info_lyrics_provided">All lyrics are provided by <a href="https://www.vagalume.com.br/">Vagalume</a>.</string>
+    <string name="text_info_vagalume_lyric">An Internet connection is required to search for the lyrics of the song, however, if any lyrics have already been found, they will be automatically stored in the cache, so you can access the lyrics stored in the cache even without an Internet connection.</string>
+    <string name="text_info_lyric_cache">Internet connection is required to search for the lyrics of the song, however if any lyrics have already been found, they will be automatically saved in cache, so you can access the lyrics saved in cache even without an internet connection.</string>
+    <string name="text_explained_how_works">Now that you know how it works, to continue, it is necessary to grant permission to access notifications.</string>
+    <string name="text_tip_restart">Important tip: If the panel is not updating or looking for lyrics when playing music, try restarting the device, if the problem still persists, it is probably because the music player you are using should not be compatible.</string>
+
+    <string name="text_request_permission">Request permission</string>
+    <string name="text_permission_granted">Permission granted</string>
+
+    <string name="title_expansion_panel_permission_necessary">Why is permission to access notifications required?</string>
+    <string name="title_expansion_panel_lyric_provider">How are the lyrics of the songs found?</string>
+    <string name="title_expansion_panel_players_support">Are all music players supported?</string>
+    <string name="title_expansion_panel_lyrics_offline">Can I access the lyrics without an internet connection?</string>
+    <string name="title_finish_setup">Finish setup</string>
+
+    <!--    CAPTCHA ACTIVITY-->
+    <string name="title_activity_captcha">Captcha</string>
+
+    <string name="text_reload">Reload</string>
+    <string name="text_numbers">Numbers</string>
+    <string name="text_success_captcha">Please enter the numbers that appear in the image above in the field below</string>
+    <string name="text_error_captcha">There was an error loading the captcha, check your internet connection and try to reload the captcha</string>
+    <string name="text_invalid_captcha">Invalid captcha</string>
+    <string name="text_error_validate_captcha">Error validating Captcha, please try again</string>
+
+    <!--    SETTINGS ACTIVITY-->
+    <string name="title_activity_settings">Settings</string>
+
+    <!--    HEADER FRAGMENT-->
+
+    <!-- LYRICS-->
+    <string name="title_category_lyrics">Lyrics</string>
+
+    <string name="summary_cached_lyrics">Manage cached lyrics</string>
+    <string name="title_cached_lyrics">Cached lyrics</string>
+
+    <string name="summary_approximate_result">Shows the lyrics of the song even if the result found has been approximated</string>
+    <string name="title_approximate_result">Approximate result</string>
+
+    <string name="title_long_track">Ignore long tracks</string>
+    <string name="summary_long_track">If possible, tracks longer than 20 minutes (such as podcasts) will be ignored</string>
+
+    <string name="summary_translation">If available, shows the button to translate lyric</string>
+    <string name="title_translation">Translation</string>
+
+    <!-- DESIGN -->
+    <string name="title_category_style">Style</string>
+
+    <string name="summary_text_color">Changes the color of the text</string>
+    <string name="title_text_window">Text</string>
+
+    <string name="summary_panel_color">Changes the color of the panel</string>
+    <string name="title_panel_color">Panel</string>
+
+    <string name="summary_title_color">Changes the color of the title</string>
+    <string name="title_color">Title</string>
+
+    <string name="summary_divider_color">Changes the color of the divider</string>
+    <string name="divider_color">Divider</string>
+
+    <string name="title_text_size">Text size</string>
+
+    <!-- APPLICATION -->
+    <string name="title_category_app">Application</string>
+
+    <string name="summary_clear_lyrics">Clear the song lyrics cache</string>
+    <string name="title_clear_lyrics">Clear cache</string>
+
+    <string name="text_rate_app">Rate app</string>
+
+    <string name="title_app_theme">App theme</string>
+    <string name="summary_theme_app">Changes the theme of the app</string>
+
+    <string name="text_auto_system">Auto (system)</string>
+    <string name="text_light">Light</string>
+    <string name="text_dark">Dark</string>
+
+    <string name="summary_open_source_licenses">Open source licenses</string>
+
+    <string name="text_version">Version</string>
+
+    <string name="title_donate">The power of coffee</string>
+    <string name="message_coffee">Hello, this button is for people interested in supporting the developer, after all it took a lot of coffees ☕ to make this app 😆. This application is completely free and contains no ads. If you decide to give support, thank you! If you decide not to give support, I also thank you for using the application.</string>
+
+    <string name="text_cache_cleared">Cache cleared</string>
+    <string name="text_are_you_sure">Are you sure?</string>
+
+    <!--    LYRIC CACHE FRAGMENT-->
+
+    <string name="text_send_to_the_panel">Send to the panel</string>
+    <string name="text_delete">Delete</string>
+    <string name="text_share">Share</string>
+    <string name="text_successful_deleted">Successful deleted</string>
+    <string name="text_partially_deleted">Partially deleted</string>
+    <string name="text_error_on_delete">Error on delete</string>
+    <string name="text_not_found_activity_share">Not found compatible apps to share</string>
+    <string name="text_preview_panel">Preview available on the panel</string>
+
+</resources>

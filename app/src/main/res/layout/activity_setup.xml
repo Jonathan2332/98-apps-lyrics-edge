@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".view.SetupActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="6dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:textColor="?attr/colorOnSecondary"
+            android:text="@string/text_about_setup"/>
+
+        <include layout="@layout/expansion_panel_why_permission_necessary" />
+
+        <include layout="@layout/expansion_panel_lyrics_provider" />
+
+        <include layout="@layout/expansion_panel_players_support" />
+
+        <include layout="@layout/expansion_panel_lyrics_offline" />
+
+        <include layout="@layout/expansion_panel_permission" />
+
+    </LinearLayout>
+
+</ScrollView>

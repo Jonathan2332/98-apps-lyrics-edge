@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="a98apps.lyricsedge">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.samsung.android.providers.context.permission.WRITE_USE_APP_FEATURE_SURVEY" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LyricsEdgeKotlin"
+        android:usesCleartextTraffic="true">
+
+        <activity
+            android:name="com.google.android.gms.oss.licenses.OssLicensesMenuActivity"
+            android:label="@string/summary_open_source_licenses"
+            tools:replace="android:label"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name="com.google.android.gms.oss.licenses.OssLicensesActivity"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name=".view.SettingsActivity"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name=".view.SetupActivity"
+            android:autoRemoveFromRecents="true"
+            android:configChanges="keyboardHidden|screenSize|orientation"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:label="@string/title_activity_setup"
+            android:screenOrientation="sensor" />
+
+        <activity
+            android:name=".view.CaptchaActivity"
+            android:autoRemoveFromRecents="true"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:label="Captcha"
+            android:screenOrientation="sensor" />
+
+        <receiver
+            android:name=".edge.Cocktail"
+            android:label="CocktailMonitorReceiver"
+            android:permission="com.samsung.android.app.cocktailbarservice.permission.ACCESS_PANEL">
+            <intent-filter>
+                <action android:name="com.samsung.android.cocktail.v2.action.COCKTAIL_UPDATE" />
+            </intent-filter>
+
+            <meta-data
+                android:name="com.samsung.android.cocktail.provider"
+                android:resource="@xml/edge_single_plus" />
+        </receiver>
+
+        <service
+            android:name=".edge.CocktailService"
+            android:label="RemoteListService"
+            android:permission="android.permission.BIND_REMOTEVIEWS" />
+
+        <service
+            android:name=".notification.NotificationListener"
+            android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.samsung.android.cocktail.mode"
+            android:value="edge_single_plus" />
+
+    </application>
+
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.SEND" />
+            <data android:scheme="*" />
+        </intent>
+    </queries>
+
+</manifest>
