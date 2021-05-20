@@ -50,7 +50,7 @@ Este projeto foi idealizado apenas para fazer parte do meu portfólio como demon
 
 ### O que é este projeto?
 
-Lyrics Edge é um aplicativo para identificar qual música está tocando em seu telefone e pesquisar a letra e mostrar o resultado no painel de borda. Este aplicativo é exclusivo para telefones Samsung que contêm o recurso de painel de borda.
+Lyrics Edge é um aplicativo para identificar qual música está tocando em seu telefone e pesquisar a letra e mostrar o resultado no painel edge. Este aplicativo é exclusivo para telefones Samsung que contêm o recurso de painel edge.
 
 
 ### O que foi utilizado:
