@@ -12,7 +12,7 @@ This project was designed just to be part of my portfolio as a demostration of e
 
 Lyrics Edge is an application to identify which song is playing in your phone and search for the lyrics and diplay the result on the edge panel. This application is exclusive for Samsung phones that contains the edge panel feature.
 
-The application offers, in addition of the letters, the possibility of translation if available. All lyrics and translation are provided by [Vagalume](https://www.vagalume.com.br/)
+The application offers, in addition of the lyrics, the possibility of translation if available. All lyrics and translation are provided by [Vagalume](https://www.vagalume.com.br/)
 
 
 ### What was used:
